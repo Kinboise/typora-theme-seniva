@@ -1,0 +1,9 @@
+@import url('seniva.css');
+
+:root {
+  --bg-color: #bfcad3;
+  --text-color: #33503f;
+  --clabel: #6f7a83;
+  --ccard: #dfeaf3;
+  --cwhite: #fff;
+}

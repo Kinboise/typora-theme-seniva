@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter');
+  src: url("./seniva/Inter-Regular.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter');
+  src: url("./seniva/Inter-Italic.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Inter');
+  src: url("./seniva/Inter-Bold.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Inter');
+  src: url("./seniva/Inter-BoldItalic.woff2?v=3.19") format("woff2");
+}
+
+:root {
+  --fserif: 'STIX Two Text', 'PT Serif', Constantia, Georgia, 'Times New Roman', unifik, '思源宋体 SC', '思源宋体 CN', '思源宋体', 'Source Han Serif CN', 华文中宋, serif;
+  --fsans: 'Inter', 'Source Sans 3', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, '思源黑体 SC', '思源黑体 CN', '思源黑体', 'Source Han Sans CN', 微软雅黑, 'Fitenkajti', 'unifik', sans-serif;
+  --monospace: 'Fira Code', 'Inconsolata', 'Cascadia Code', 'Consolas', monospace;
+  --bg-color: #bfd3ca;
+  --text-color: #333f50;
+  --clabel: #6f837a;
+  --ccard: #dff3ea;
+  --cwhite: #fff;
+  --side-bar-bg-color: var(--ccard);
+  --md-char-color: var(--clabel);
+  --meta-content-color: var(--clabel);
+  --active-file-bg-color: var(--cwhite);
+}
+
+html {
+  font-family: var(--fsans);
+  font-feature-settings: 'tnum', 'cv05', 'cv08';
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+content {
+  background-color: var(--bg-color);
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--bg-color);
+}
+
+p {
+  clear: both;
+  padding: 1px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+h1,
+h3,
+h5 {
+  font-family: var(--fserif);
+}
+
+h2,
+h4,
+h6 {
+  font-family: var(--fsans);
+}
+
+h1 {
+  font-size: 250%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+h4 {
+  font-size: 125%;
+}
+
+h2 {
+  color: var(--cwhite);
+  padding-top: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  background-color: var(--clabel);
+  border-radius: 4px;
+  width: fit-content;
+  box-shadow: 0 2px 4px 1px #00000026;
+}
+
+h5,
+h6 {
+  font-size: 100%;
+  color: var(--cwhite);
+  padding-top: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  margin-bottom: 0px;
+  background-color: var(--clabel);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width: fit-content;
+  box-shadow: 0 2px 4px 1px #00000026;
+  display: table;
+}
+
+code {
+  background-color: var(--ccard);
+  box-shadow: 0 2px 4px 1px #00000026;
+}
+
+.md-fences,
+pre.md-meta-block {
+  padding: 1rem 0.5rem 1rem;
+  background-color: var(--ccard);
+  box-shadow: 0 2px 4px 1px #00000026;
+}
+
+blockquote,
+h6+p,
+h5+p,
+h6+div,
+h5+div {
+  padding: 8px;
+  background-color: var(--ccard);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 1px #00000026;
+}
+
+h6+p,
+h5+p,
+h6+div,
+h5+div {
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+}
+
+.col1 {
+  float: left;
+  min-width: 20em;
+  width: fit-content;
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+input[type="text"] {
+  margin-left: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 4px;
+
+  cursor: pointer;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  color: var(--cwhite);
+
+  background-color: var(--clabel);
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 #0000004c;
+}
+
+button:hover {
+  background-color: #d40;
+}
+
+button:active {
+  box-shadow: 0 1px 3px 2px #0000004c;
+}
+
+th {
+  border: 1px solid var(--clabel);
+  background-color: var(--clabel);
+  color: var(--cwhite);
+  padding: 5px;
+}
+
+td {
+  border: 1px solid var(--clabel);
+  background-color: var(--ccard);
+  padding: 5px;
+}
+
+u {
+  text-decoration: none;
+  border: 0;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(currentcolor, currentcolor) 1 0 / 1 0.1em;
+}
+
+#md-searchpanel {
+  background-color: var(--ccard);
+}
+
+.context-menu {
+  background-color: var(--ccard);
+}

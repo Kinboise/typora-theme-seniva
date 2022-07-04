@@ -1,0 +1,16 @@
+@import url('seniva-dark.css');
+
+:root {
+  --bg-color: #402c35;
+  --text-color: #ccc0af;
+  --clabel: #907c85;
+  --ccard: #200c15;
+  --cwhite: #000;
+}
+.md-fences,
+pre.md-meta-block {
+  padding: 1rem 0.5rem 1rem;
+  background-color: #dff3ea;
+  filter: invert(100%);
+  box-shadow: 0 2px 4px 1px #ffffff26;
+}
